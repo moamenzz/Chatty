@@ -1,6 +1,6 @@
 const whitelist = [
   "http://localhost:5173",
-  "https://chatty319.vercel.app/",
+  "https://chatty319.vercel.app",
   "https://chatty-ckq7.onrender.com",
 ];
 

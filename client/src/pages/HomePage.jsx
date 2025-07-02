@@ -1,22 +1,9 @@
-import { useEffect } from "react";
-import useAuthStore from "../../store/useAuthStore.js";
 import { useChatStore } from "../../store/useChatStore.js";
 import Sidebar from "../components/Sidebar.jsx";
 import ChatContainer from "../components/ChatContainer.jsx";
 import NoChatSelected from "../components/NoChatSelected.jsx";
 
 const HomePage = () => {
-  const { accessToken, roles, User, onlineUsers } = useAuthStore();
-  useEffect(() => {
-    console.log(accessToken);
-    console.log(roles);
-    console.log(User);
-    console.log(User?.email);
-    console.log(User?.username);
-    console.log(User?.id);
-    console.log(onlineUsers);
-  }, [accessToken, roles, User]);
-
   const { selectedUser } = useChatStore();
 
   return (
