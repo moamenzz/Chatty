@@ -1,4 +1,8 @@
-const whitelist = ["http://localhost:5173", "https://chatty319.vercel.app/"];
+const whitelist = [
+  "http://localhost:5173",
+  "https://chatty319.vercel.app/",
+  "https://chatty-ckq7.onrender.com",
+];
 
 export const corsConfig = {
   origin: (origin, callback) => {
